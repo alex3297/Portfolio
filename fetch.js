@@ -78,7 +78,7 @@ if (USE_GITHUB_DATA === "true") {
       data += d;
     });
     res.on("end", () => {
-      fs.writeFile("./profile.json", data, function (err) {
+      fs.writeFile(".src/profile.json", data, function (err) {
         if (err) return console.log(err);
         console.log("saved file to src/profile.json");
       });
@@ -114,7 +114,7 @@ if (MEDIUM_USERNAME !== undefined) {
       mediumData += d;
     });
     res.on("end", () => {
-      fs.writeFile("./blogs.json", mediumData, function (err) {
+      fs.writeFile(".src/blogs.json", mediumData, function (err) {
         if (err) return console.log(err);
         console.log("saved file to public/blogs.json");
       });
